@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario IMSS</h1>
+    <form class="declara" id="contact_form" action="">
+        <ul>
+            <li>
+                <label for="N de derecho habiente">Numero de derecho habiente</label>
+                <input type="text" name="nddh" pattern="[A-Za-z].{11,}" placeholder="numeros o letras" maxlength="11" required>
+            </li>
+            <li>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="user_name" placeholder="18 caracteres" />
+            </li>
+            <li>
+                <label for="name">Apellido:</label>
+                <input type="text" id="apellido" name="user_apellido" placeholder="18 caracteres" />
+            </li>
+            <li>
+                <label for="mail">Tipo de sangre:</label>
+                <select name="periodo" required id="">
+                    <option value="">opci&oacute;n</option>
+                    <option value="">A+</option>
+                    <option value="enero">A-</option>
+                    <option value="febrero">B+</option>
+                    <option value="marzo">B-</option>
+                    <option value="abril">AB-</option>
+                    <option value="mayo">O+</option>
+                    <option value="junio">O-</option>                    
+                </select>
+            </li>
+           <li>
+                <label for="mail">Edad:</label>
+                <input type="text" name="edad" id="edad" placeholder="2 caracteres" maxlength="2" required/>
+            </li>
+            <li>
+                <label for="mail">Especialidad:</label>
+                <select name="periodo" required id="">
+                    <option value="">opci&oacute;n</option>
+                    <option value="">Cardiología</option>
+                    <option value="">Cirugía General</option>
+                    <option value="">Gastroenterología y Nutrición Pediátrica</option>
+                    <option value="">Ginecología y Obstetricia</option>
+                    <option value="">Infectología</option>
+                    <option value="">Neurocirugía</option>
+                    <option value="">Pediatría</option>
+                    <option value="">Psiquiatría</option>
+                    <option value="">Urgencias</option>
+                    <option value="">Urología</option>  
+
+                </select>
+            </li>
+            <li>
+                <label for="tel">Clave lada</label>
+                <input type="celu" id="cel" name="user_lada" placeholder="Tres numeros" maxlength="3" required>
+            </li>
+            <li>
+                <label for="tel">Número</label>
+                <input type="celu" id="cel" name="user_cel" placeholder="Número" maxlength="7" required>
+            </li>
+            <li>
+                <button class="submit" type="xubmit">Enviar</button>
+            </li>
+        
+        </ul>
+    </form>
+</body>
+</html>
